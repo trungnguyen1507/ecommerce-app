@@ -24,7 +24,7 @@ const Cart = () => {
                         </div>
                         <div className="col-md-4">
                             <h3>{cartItem.title}</h3>
-                            <p className="lead fw-bold">$ {cartItem.price}</p>
+                            <p className="lead fw-bold">$ {(cartItem.price * cartItem.qty).toFixed(2)}</p>
                             <div className="d-flex">
                                 <button onClick={() => handleRemove(cartItem)} className="btn btn-dark mx-2">
                                     -
